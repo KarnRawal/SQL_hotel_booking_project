@@ -205,9 +205,8 @@ FROM hotel_bookings
 GROUP BY booking_channel
 ORDER BY revenue DESC;
 ```
-Findings
-
-Scale: The dataset covers 4,954 bookings across 500 booking customers (out of 501 total customers — 1 customer has never booked) at 10 hotels across 20 cities, generating $1,313,554.94 in total revenue.
+### Findings
+* Scale: The dataset covers 4,954 bookings across 500 booking customers (out of 501 total customers — 1 customer has never booked) at 10 hotels across 20 cities, generating $1,313,554.94 in total revenue.
 Booking Volume Trend: Volume ramped up sharply through 2024, peaking in September 2024 (2,249 bookings, ~$588K revenue) — nearly 4x the next-busiest month (October: 1,582 bookings, ~$391K) — before falling off steeply in November. This points to a strong seasonal/promotional spike in September rather than a steady trend.
 Hotel Performance: Revenue is fairly evenly distributed across properties (~$124K–$145K each). ITC Grand leads in revenue ($144.7K, 521 bookings), followed closely by Lalitha Mahal ($143.8K) and Fortune ($138.0K, the highest booking count at 527). Southern Star trails the pack ($124.0K).
 Booking Lead Time & Stay Length: Customers book 21–25 days in advance on average depending on hotel (Fortune highest at ~25 days, Leela Palace lowest at ~21 days), and stays average ~1.7–1.9 nights — this is a short-stay market with fairly consistent behavior across properties.
