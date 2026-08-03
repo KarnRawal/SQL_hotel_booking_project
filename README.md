@@ -12,7 +12,7 @@ This is a project done in MySQL for the purpose of demonstrating SQL skills. It 
 <img width="604" height="411" alt="Screenshot 2026-08-03 at 10 40 47 PM" src="https://github.com/user-attachments/assets/6362068c-3478-4384-b510-c7097752843b" />
 
 ## Project Structure 
-**1. Data Cleaning Checks and Data Exploration**
+__1. Data Cleaning Checks and Data Exploration__
 
 Duplicate Booking IDs: None found — all 4,954 booking_id values in hotel_bookings are unique.
 Orphaned Foreign Keys: None found — every booking maps to a valid customer_id and hotel_id; no broken joins.
