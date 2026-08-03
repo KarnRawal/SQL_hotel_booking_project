@@ -1,1 +1,1 @@
-# SQL_hotel_booking_project
+# Hotel Booking SQL Project
