@@ -14,8 +14,18 @@ This is a project done in MySQL for the purpose of demonstrating SQL skills. It 
 ## Project Structure 
 ### 1. Data Cleaning Checks and Data Exploration
 
-Duplicate Booking IDs: None found — all 4,954 booking_id values in hotel_bookings are unique.
-Orphaned Foreign Keys: None found — every booking maps to a valid customer_id and hotel_id; no broken joins.
-Impossible Values: None found — no bookings with zero/negative number_of_nights or negative per_night_rate.
-Date Logic: None found — no booking has a stay_start_date earlier than its booking_date.
-Coverage: Bookings were made between Oct 2023 and Nov 2024, for stays between Sep 2024 and Dec 2024. The dataset is clean and required no corrective transformation.
+**Duplicate Booking IDs: None found — all 4,954 booking_id values in hotel_bookings are unique.**
+'''sql
+SELECT booking_id ,COUNT(*) as cnt
+FROM hotel_bookings
+GROUP BY booking_id
+HAVING cnt>1;
+'''
+
+**Orphaned Foreign Keys: None found — every booking maps to a valid customer_id and hotel_id; no broken joins.**
+
+**Impossible Values: None found — no bookings with zero/negative number_of_nights or negative per_night_rate.**
+
+**Date Logic: None found — no booking has a stay_start_date earlier than its booking_date.**
+
+**Coverage: Bookings were made between Oct 2023 and Nov 2024, for stays between Sep 2024 and Dec 2024. The dataset is clean and required no corrective transformation.**
